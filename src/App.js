@@ -2,10 +2,7 @@ import React from "react";
 import { BrowserRouter, Route, Switch } from "react-router-dom";
 import { Routes } from "./assets/Routes/Routes";
 import Navbar from "./components/Navbar/navbar.component";
-import {
-  leftItems,
-  rightItems,
-} from "../src/assets/data/Navbar-Data/navbar.data";
+
 function App() {
   return (
     <div className="App">
