@@ -41,7 +41,7 @@ const Footer = () => {
 
                     <hr style={{ marginTop: "50px" }}></hr>
                 </div>
-                <div className={classes.last}>Copyright2021 Team Rays NIT JAMSHEDPUR</div>
+                <div className={classes.last}>&copy;2021 Team Rays NIT JAMSHEDPUR</div>
             </div>
         </>
     );

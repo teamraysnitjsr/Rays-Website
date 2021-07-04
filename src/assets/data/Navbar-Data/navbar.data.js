@@ -1,7 +1,7 @@
 import { IoIosHome } from "react-icons/io";
 import { GiTrophyCup } from "react-icons/gi";
 import { AiFillContacts } from "react-icons/ai";
-import { FaSignInAlt } from "react-icons/fa";
+import { AiOutlineTeam } from "react-icons/ai";
 import { AiOutlineTeam } from "react-icons/ai";
 import { GrMoney } from "react-icons/gr";
 const leftItems = [
@@ -10,7 +10,7 @@ const leftItems = [
   { content: "Contact", to: "error", id: 3, icon: AiFillContacts },
 ];
 const rightItems = [
-  { content: "SignIn", to: "login", id: 4, icon: FaSignInAlt },
+  { content: "Teams", to: "teams", id: 4, icon: AiOutlineTeam },
   { content: "About", to: "signup", id: 5, icon: AiOutlineTeam },
   { content: "Sponsor", to: "signup", id: 6, icon: GrMoney },
 ];
