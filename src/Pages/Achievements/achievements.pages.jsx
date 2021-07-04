@@ -14,10 +14,10 @@ import { makeStyles } from "@material-ui/core/styles";
 
 const useStyles = makeStyles((theme) => ({
   root: {
-    width: "205vw",
-    height: "105vh",
+    
+    
     backgroundColor: theme.palette.grey[200],
-    paddinngTop: theme.spacing(10),
+    paddinngTop: theme.spacing(20),
     //paddingLeft: theme.spacing(40),
   },
 }));
@@ -26,10 +26,19 @@ const Achievements = () => {
   const classes = useStyles();
   return (
     <Container className={classes.root}>
-      <Grid container spacing={5}>
-        <Grid item sm={3} xs={12}>
+      <Grid
+        container
+        spacing={6}
+        style={{
+          
+        }}
+      >
+        <Grid item lg={3} md={6} xs={12}>
           <Card
             style={{
+              borderRadius: "22px",
+              padding: "4%",
+              minHeight: "95vh",
               backgroundColor: "moccasin",
             }}
           >
@@ -39,13 +48,8 @@ const Achievements = () => {
               subheader="MARCH 2019"
             />
             <CardActionArea>
-              <CardMedia>
-                <img
-                  src="./images/ESVC_19.jpg"
-                  alt=""
-                  width="277"
-                  height="250"
-                />
+              <CardMedia style={{}}>
+                <img src="./images/ESVC_19.jpg" alt="" width="100%" />
               </CardMedia>
               <CardContent>
                 <Typography variant="h5">
@@ -74,10 +78,13 @@ const Achievements = () => {
             </CardActions>
           </Card>
         </Grid>
-        <Grid item sm={3} xs={12}>
+        <Grid item lg={3} md={6} xs={12}>
           <Card
             style={{
+              borderRadius: "22px",
+              minHeight: "95vh",
               backgroundColor: "lemonchiffon",
+              padding: "4%",
             }}
           >
             <CardHeader
@@ -87,12 +94,7 @@ const Achievements = () => {
             />
             <CardActionArea>
               <CardMedia>
-                <img
-                  src="./images/ESVC_2018(F).JPEG"
-                  alt=""
-                  width="278"
-                  height="260"
-                />
+                <img src="./images/ESVC_2018(F).JPEG" alt="" width="100%" />
               </CardMedia>
               <CardContent>
                 <Typography variant="h5">
@@ -122,9 +124,12 @@ const Achievements = () => {
             </CardActions>
           </Card>
         </Grid>
-        <Grid item sm={3} xs={12}>
+        <Grid item lg={3} md={6} xs={12}>
           <Card
             style={{
+              borderRadius: "22px",
+              padding: "4%",
+              minHeight: "95vh",
               backgroundColor: "moccasin",
             }}
           >
@@ -135,12 +140,7 @@ const Achievements = () => {
             />
             <CardActionArea>
               <CardMedia>
-                <img
-                  src="./images/IASC2K17.JPG"
-                  alt="IASC 2017"
-                  width="280"
-                  height="260"
-                />
+                <img src="./images/IASC2K17.JPG" alt="IASC 2017" width="100%" />
               </CardMedia>
               <CardContent>
                 <Typography variant="h5">
@@ -168,9 +168,12 @@ const Achievements = () => {
             </CardActions>
           </Card>
         </Grid>
-        <Grid item sm={3} xs={12}>
+        <Grid item lg={3} md={6} xs={12}>
           <Card
             style={{
+              borderRadius: "22px",
+              padding: "4%",
+              minHeight: "95vh",
               backgroundColor: "lemonchiffon",
             }}
           >
@@ -181,12 +184,7 @@ const Achievements = () => {
             />
             <CardActionArea>
               <CardMedia>
-                <img
-                  src="./images/IASC_2016.jpg"
-                  alt=""
-                  width="278"
-                  height="260"
-                />
+                <img src="./images/IASC_2016.jpg" alt="" width="100%" />
               </CardMedia>
               <CardContent>
                 <Typography variant="h5">
