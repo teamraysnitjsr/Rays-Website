@@ -1,0 +1,97 @@
+
+@media only screen and (min-width: 768px) {
+  .ui.container {
+    width: 700px;
+    max-width: 700px;
+  }
+
+   .featureHeader{
+    font-size: 45px;
+    margin-top: 8%;
+    text-align: center;
+    font-family: fantasy;
+  }
+ 
+}
+
+.ui.inverted.vertical.center.aligned.segment {
+  padding-top: 36px;
+}
+
+nav.ui.container .ui.inverted.compact.menu .active.item {
+  background-color: inherit;
+  border-bottom-color: white;
+  border-bottom-style: solid;
+  border-bottom-width: 2px;
+}
+
+.ui.inverted.vertical.segment {
+  height: 90vh;
+  background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
+    url("../../assets/images/image3.jpg");
+
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  background-position: center;
+}
+
+.ui.content.container {
+  height: 300px;
+  position: absolute;
+  top: 0;
+  bottom: 45%;
+  left: 0;
+  right: 0;
+  margin: auto;
+}
+
+.ui.content.container h1.header {
+  font-size: 36px;
+}
+
+.ui.content.container p {
+  font-size: 21px;
+  line-height: 1.6;
+  font-weight: 300;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+.ui.vertical.segment:not(.inverted) {
+  padding-top: 6rem;
+  padding-bottom: 6rem;
+}
+
+span.sub {
+  color: rgba(0, 0, 0, 0.6);
+}
+
+.ten.wide.column h1 {
+  font-size: 3rem;
+}
+
+.ten.wide.column p {
+  font-size: 1.5rem;
+}
+
+
+.ui.tablet.computer.only.padded.grid {
+  position: absolute;
+  z-index: 8;
+  width: 100%;
+  top: 1rem;
+}
+.ui.centered.small.circular.image {
+  margin-top: 14px;
+  margin-bottom: 14px;
+}
+#content {
+  padding: 5%;
+}
+.featureHeader{
+    font-size: 45px;
+     margin-top: 8%;
+    text-align: center;
+    font-family: fantasy;
+  }
