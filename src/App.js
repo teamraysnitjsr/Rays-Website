@@ -9,20 +9,19 @@ function App() {
     <div className="App">
       <BrowserRouter>
         <Navbar />
-        <header className="App-header">
-          <Switch>
-            {Routes.map((item) => (
-              <Route
-                key={item.id}
-                exact={item.exact}
-                path={item.path}
-                component={item.component}
-              ></Route>
-            ))}
-          </Switch>
-        </header>
+
+        <Switch>
+          {Routes.map((item) => (
+            <Route
+              key={item.id}
+              exact={item.exact}
+              path={item.path}
+              component={item.component}
+            ></Route>
+          ))}
+        </Switch>
       </BrowserRouter>
-      <Footer/>
+      <Footer />
     </div>
   );
 }
