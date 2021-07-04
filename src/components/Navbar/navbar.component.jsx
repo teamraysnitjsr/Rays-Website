@@ -49,10 +49,10 @@ export default class Navbar extends Component {
             onClick={this.handleItemClick}
           />
           <Menu.Item
-            name="signin"
+            name="teams"
             as={NavLink}
-            to="/signin"
-            active={activeItem === "signin"}
+            to="/teams"
+            active={activeItem === "teams"}
             onClick={this.handleItemClick}
           />
         </Menu>
