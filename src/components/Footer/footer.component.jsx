@@ -31,7 +31,7 @@ const Footer = () => {
                     </div>
                 </div>
                 <div className={classes.container}>
-                    <div className={classes.row}>
+                    <div className={classes.row1}>
                         <p className={classes.left}>Follow us on social media to get the latest updates</p>
                         <a href="https://www.youtube.com/channel/UCNrC_ukYhFvk5yEDrGmp9eA" className={classes.you}><FaYoutube size={30} /></a>
                         <a href="https://www.facebook.com/teamraysnitjsr" className={classes.fb}><FaFacebookSquare size={30} /></a>
