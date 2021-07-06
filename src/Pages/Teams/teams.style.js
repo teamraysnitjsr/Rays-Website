@@ -20,6 +20,12 @@ export const useStyles = makeStyles((theme) => ({
         '@media screen and (max-width: 1256px)': {
             fontSize: "45px"
         },
+        '@media only screen and (max-width: 450px) ':{
+            fontSize: "33px"
+            },
+            '@media only screen and (max-width: 350px) ':{
+                fontSize: "25px"
+                }
     },
     top4: {
         color: "grey",
@@ -32,6 +38,9 @@ export const useStyles = makeStyles((theme) => ({
         '@media screen and (max-width: 1256px)': {
             fontSize: "15px"
         },
+        '@media only screen and (max-width: 700px) ':{
+            padding: "30px 50px",
+            },
         
     },
     batch: {

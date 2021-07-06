@@ -96,7 +96,7 @@ const Teams = () => {
             <div style={{ marginTop: "30px" }, {overflowX: "hidden"}}>
                 <h1 className={classes.top3}>MEET THE TEAM</h1>
                 <div className={classes.top4}>The team came into existence in the year 2014 with its dedicated founder Ambar Katyayyan and
-                    co-founder Sanket Raj and is currently under the guidance of Kushagra Shreysth ( Captain) and Aman Kumar (Vice-captain).<br />
+                    co-founder Sanket Raj and is currently under the guidance of Kushagra Shreysth (Captain) and Aman Kumar (Vice-captain).<br />
                     Our team consist of top enthusiastic engineering students from different branches who really want to bring change in today's
                     automobile industry.
                 </div>
