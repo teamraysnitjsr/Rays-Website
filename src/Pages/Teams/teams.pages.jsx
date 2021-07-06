@@ -97,7 +97,7 @@ const Teams = () => {
         <div className={classes.top4}>
           The team came into existence in the year 2014 with its dedicated
           founder Ambar Katyayyan and co-founder Sanket Raj and is currently
-          under the guidance of Kushagra Shreysth ( Captain) and Aman Kumar
+          under the guidance of Kushagra Shreysth (Captain) and Aman Kumar
           (Vice-captain).
           <br />
           Our team consist of top enthusiastic engineering students from
