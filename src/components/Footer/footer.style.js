@@ -4,7 +4,7 @@ import { makeStyles } from '@material-ui/core/styles';
 export const useStyles = makeStyles((theme) => ({
     black: {
         backgroundColor: '#262626',
-        position: 'relative',
+       
         paddingTop: '100px',
         paddingBottom: '6px',
         width: '100%',
