@@ -10,9 +10,10 @@ import {
   Segment,
   Label,
 } from "semantic-ui-react";
-
 import "./home.syles.css";
-
+import car1 from '../../assets/images/car1.png';
+import car2 from '../../assets/images/car2.png';
+import car4 from '../../assets/images/car4.png';
 class Home extends Component {
   render() {
     return (
@@ -23,7 +24,13 @@ class Home extends Component {
               A Step Towards Future
             </Header>
             <Link to="/about">
-              <Button size="huge" color="green" to="/about">
+              <Button
+                size="huge"
+                style={{
+                  background: "#66fcf1",
+                }}
+                to="/about"
+              >
                 Learn more
               </Button>
             </Link>
@@ -31,12 +38,31 @@ class Home extends Component {
         </Segment>
 
         <Container>
-          <div className="featureHeader">Our Features</div>
+          <div
+            className="featureHeader"
+            style={{
+              color: "#fff",
+            }}
+          >
+            Our Features
+          </div>
           <Segment vertical>
             <Grid container stackable textAlign="center" columns={3}>
               <Grid.Column style={{}}>
-                <i class="massive circular inverted edit icon"></i>
-                <Header as="h1">Engineering Design</Header>
+                <i
+                  class="massive circular edit icon"
+                  style={{
+                    color: "#66fcf1",
+                  }}
+                ></i>
+                <Header
+                  as="h1"
+                  style={{
+                    color: "#fff",
+                  }}
+                >
+                  Engineering Design
+                </Header>
                 <p>
                   Many factors go into the construction of a solar car spanning
                   from the car's structure, how each car component comes
@@ -47,8 +73,20 @@ class Home extends Component {
               </Grid.Column>
 
               <Grid.Column>
-                <i class="massive circular inverted chart area icon"></i>
-                <Header as="h1">Business</Header>
+                <i
+                  class="massive circular  chart area icon"
+                  style={{
+                    color: "#66fcf1",
+                  }}
+                ></i>
+                <Header
+                  as="h1"
+                  style={{
+                    color: "#fff",
+                  }}
+                >
+                  Business
+                </Header>
                 <p>
                   The business team strives to engage with industries to form
                   mutually beneficial partnerships, provide our audiences a
@@ -59,8 +97,20 @@ class Home extends Component {
                 <Button color="blue">View details &raquo;</Button>
               </Grid.Column>
               <Grid.Column>
-                <i class="massive circular inverted car icon"></i>
-                <Header as="h1">Race</Header>
+                <i
+                  class="massive circular  car icon"
+                  style={{
+                    color: "#66fcf1",
+                  }}
+                ></i>
+                <Header
+                  as="h1"
+                  style={{
+                    color: "#fff",
+                  }}
+                >
+                  Race
+                </Header>
                 <p>
                   The race team looks at every aspect the race, developing the
                   best strategies for success. From determining the next move
@@ -76,9 +126,13 @@ class Home extends Component {
           <Segment vertical>
             <Grid stackable>
               <Grid.Column width={10}>
-                <Header as="h1">
+                <Header
+                  as="h1"
+                  style={{
+                    color: "#c0c0c0",
+                  }}
+                >
                   First featurette heading.{" "}
-                  <span className="sub">It'll blow your mind.</span>
                 </Header>
                 <p>
                   Donec ullamcorper nulla non metus auctor fringilla. Vestibulum
@@ -88,18 +142,23 @@ class Home extends Component {
                 </p>
               </Grid.Column>
               <Grid.Column width={6}>
-                <Image src="https://images.unsplash.com/photo-1500087326943-dcabb70c026f?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=750&q=80" />
+                <Image src={car1} />
               </Grid.Column>
             </Grid>
           </Segment>
           <Segment vertical>
             <Grid stackable>
               <Grid.Column width={6}>
-                <Image src="https://images.unsplash.com/photo-1500087326943-dcabb70c026f?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=750&q=80" />
+                <Image src={car2} />
               </Grid.Column>
               <Grid.Column width={10}>
-                <Header as="h1">
-                  Oh yeah, <span className="sub">it's that good.</span>
+                <Header
+                  as="h1"
+                  style={{
+                    color: "#c0c0c0",
+                  }}
+                >
+                  Oh yeah, it's that good.
                 </Header>
                 <p>
                   Donec ullamcorper nulla non metus auctor fringilla. Vestibulum
@@ -113,8 +172,13 @@ class Home extends Component {
           <Segment vertical>
             <Grid stackable>
               <Grid.Column width={10}>
-                <Header as="h1">
-                  And lastly, <span className="sub">this one.</span>
+                <Header
+                  as="h1"
+                  style={{
+                    color: "#c0c0c0",
+                  }}
+                >
+                  And lastly, this one.
                 </Header>
                 <p>
                   Donec ullamcorper nulla non metus auctor fringilla. Vestibulum
@@ -124,7 +188,7 @@ class Home extends Component {
                 </p>
               </Grid.Column>
               <Grid.Column width={6}>
-                <Image src="https://images.unsplash.com/photo-1500087326943-dcabb70c026f?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=750&q=80" />
+                <Image src={car4} />
               </Grid.Column>
             </Grid>
           </Segment>
@@ -137,51 +201,75 @@ class Home extends Component {
           >
             <Grid padded>
               <Grid.Row textAlign="center">
-                <Grid.Column mobile={8} tablet={4} computer={4}>
+                <Grid.Column mobile={12} tablet={6} computer={5}>
                   <Image
                     centered
                     circular
                     size="small"
-                    src="https://images.unsplash.com/photo-1530692228265-084b21566b12?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=626&q=80"
+                    src={car1}
                   />
                   <Label basic size="large">
-                    Label
+                    MEET
                   </Label>
                   <p>Something else</p>
                 </Grid.Column>
-                <Grid.Column mobile={8} tablet={4} computer={4}>
+                <Grid.Column mobile={12} tablet={6} computer={5}>
                   <Image
                     centered
                     circular
                     size="small"
-                    src="https://images.unsplash.com/photo-1530692228265-084b21566b12?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=626&q=80"
+                    src={car1}
                   />
                   <Label basic size="large">
-                    Label
+                    PLAN
                   </Label>
                   <p>Something else</p>
                 </Grid.Column>
-                <Grid.Column mobile={8} tablet={4} computer={4}>
+                <Grid.Column mobile={12} tablet={6} computer={5}>
                   <Image
                     centered
                     circular
                     size="small"
-                    src="https://images.unsplash.com/photo-1530692228265-084b21566b12?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=626&q=80"
+                    src={car1}
                   />
                   <Label basic size="large">
-                    Label
+                    DESIGN
                   </Label>
                   <p>Something else</p>
                 </Grid.Column>
-                <Grid.Column mobile={8} tablet={4} computer={4}>
+                <Grid.Column mobile={12} tablet={6} computer={5}>
                   <Image
                     centered
                     circular
                     size="small"
-                    src="https://images.unsplash.com/photo-1530692228265-084b21566b12?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=626&q=80"
+                    src={car1}
                   />
                   <Label basic size="large">
-                    Label
+                    DEVELOP
+                  </Label>
+                  <p>Something else</p>
+                </Grid.Column>
+                <Grid.Column mobile={12} tablet={6} computer={5}>
+                  <Image
+                    centered
+                    circular
+                    size="small"
+                    src={car1}
+                  />
+                  <Label basic size="large">
+                    DEVELOP
+                  </Label>
+                  <p>Something else</p>
+                </Grid.Column>
+                <Grid.Column mobile={12} tablet={6} computer={5}>
+                  <Image
+                    centered
+                    circular
+                    size="small"
+                    src={car1}
+                  />
+                  <Label basic size="large">
+                    DEVELOP
                   </Label>
                   <p>Something else</p>
                 </Grid.Column>
