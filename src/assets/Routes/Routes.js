@@ -4,6 +4,7 @@ import Achievements from "../../Pages/Achievements/achievements.pages";
 import Contact from "../../Pages/Contact Us/contact.pages";
 import Teams from "../../Pages/Teams/teams.pages";
 import Sponsor from "../../Pages/Sponsor/sponsor.pages";
+//import Sponsor from '../../Pages/Sponsor/sponsor.pages'
 export const Routes = [
   {
     id: 1,

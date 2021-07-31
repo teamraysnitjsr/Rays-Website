@@ -24,7 +24,8 @@ const useStyles = makeStyles((theme) => ({
     
     // backgroundColor: theme.palette.grey[200],
     paddinngTop: theme.spacing(10),
-    marginTop: theme.spacing(5)
+    marginTop: theme.spacing(5),
+   
     //paddingLeft: theme.spacing(40),
   },
 }));
@@ -67,6 +68,7 @@ const Achievements = () => {
               <p
                 style={{
                   color: "black",
+                
                 }}
               >
                 <b>

@@ -1,0 +1,280 @@
+@import url(https://fonts.googleapis.com/css?family=Lato:400,700,900);
+
+html {
+  box-sizing: border-box;
+  height: 100%;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+.sponsor-body {
+  *zoom: 1;
+  font-family: "Lato", sans-serif;
+  font-size: 100%;
+  min-height: 100%;
+  line-height: 1.5;
+  padding: 2.5em 0;
+}
+
+.slider-image {
+  position: fixed;
+  top: 0;
+  left: 0;
+
+  /* Preserve aspet ratio */
+  min-width: 100%;
+  min-height: 100%;
+}
+
+.sponsor-title {
+  text-align: center;
+  font-size: 150%;
+}
+
+.sponsor-title h1 {
+  text-align: center;
+  font-size: 280%;
+}
+
+.sponsor-container {
+  margin: 0 auto;
+  width: 90%;
+  max-width: 1200px;
+}
+
+ .perks{
+  list-style-position: outside;
+  list-style-type: circle;
+  margin: 0;
+  padding: 0;
+}
+
+.group:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.grid-1-5 {
+  margin: 1.3em;
+  border: 2px solid #5d4e65;
+  min-height: 400px;
+  padding: 1.25em;
+  position: relative;
+  text-align: center;
+  transition: all 0.2s ease-in-out;
+}
+
+@media screen and (min-width: 700px) {
+  .grid-1-5 {
+    float: left;
+    width: 50%;
+  }
+
+  .grid-1-5:nth-child(odd) {
+    clear: left;
+  }
+}
+
+@media screen and (min-width: 800px) {
+  .grid-1-5 {
+    width: 33.3333333%;
+  }
+
+  .grid-1-5:nth-child(3n + 1) {
+    clear: left;
+  }
+
+  .grid-1-5:nth-child(odd) {
+    clear: none;
+  }
+}
+
+@media screen and (min-width: 1120px) {
+  .grid-1-5 {
+    width: 20%;
+  }
+
+  .sponsor-container {
+    display: flex;
+    justify-content: center;
+  }
+
+  .grid-1-5:nth-child(odd),
+  .grid-1-5:nth-child(3n + 1) {
+    clear: none;
+  }
+}
+
+.grid-1-5:hover {
+  background-color: #c28bdd;
+  *zoom: 1;
+
+  background-size: 100%;
+
+  border-top: 2px solid #ec7a37;
+  border-bottom: 2px solid #ff4f69;
+  box-shadow: 0px 0px 10px 0px #323232;
+  transform: scale(1.025);
+  z-index: 2;
+}
+
+.grid-1-5:hover:before,
+.grid-1-5:hover:after {
+  content: "";
+  position: absolute;
+  background-color: #f67d35;
+  *zoom: 1.2;
+
+  background-size: 100%;
+  background-image: -webkit-gradient(linear,
+      50% 0%,
+      50% 100%,
+      color-stop(0%, #f67d35),
+      color-stop(100%, #ff4f68));
+
+  top: -2px;
+  bottom: -2px;
+  width: 2px;
+}
+
+.grid-1-5:hover:before {
+  left: -2px;
+}
+
+.grid-1-5:hover:after {
+  right: -2px;
+
+}
+
+.grid-1-5:hover .sponsor-button {
+  background-color: #e92620;
+  *zoom: 1;
+  background-size: 100%;
+}
+
+.sponsor-h2,
+.sponsor-h3,
+.sponsor-p,
+.sponsor-ul {
+  margin: 0;
+}
+
+.sponsor-h2 {
+  font-size: 2em;
+  font-weight: 60;
+  margin: 0 0 0.5em;
+}
+
+.sponsor-h3 {
+  text-align: center;
+  font-size: 1.5em;
+  letter-spacing: 0.0625em;
+  margin: 0 0 0.3333333333333333em;
+}
+
+.sponsor-p {
+  font-size: 0.875em;
+}
+
+.sponsor-p,
+.sponsor-ul {
+  margin: 0 0 1.5em;
+}
+
+.sponsor-ul {
+  color: #796583;
+  font-size: 0.75em;
+  list-style-type: none;
+  padding: 0;
+}
+
+.sponsor-ul .sponsor-li {
+  margin: 0 0 0.8333333333333333em;
+}
+
+.sponsor-button {
+  background-color: #9c83aa;
+  border-radius: 20px;
+  color: #fff;
+  font-size: 1em;
+  font-weight: 700;
+  padding: 0.75em 1.5em;
+  position: absolute;
+  bottom: 0.25em;
+  left: 50%;
+  margin-left: -100px;
+  text-decoration: none;
+  width: 200px;
+}
+
+.uppercase,
+.sponsor-button,
+.sponsor-h2 {
+  text-transform: uppercase;
+}
+
+sup,
+.sponsor-small {
+  font-size: 0.6125em;
+}
+
+/* carousel  */
+
+.slider {
+  position: relative;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.sponsor-image {
+  position: relative;
+
+  max-width: 50%;
+  height: 200px;
+  border-radius: 10px;
+}
+
+.right-arrow {
+  position: absolute;
+  top: 50%;
+  right: 32px;
+  font-size: 3rem;
+  color: #000;
+  z-index: 10;
+  cursor: pointer;
+  user-select: none;
+}
+
+.left-arrow {
+  position: absolute;
+  top: 50%;
+  left: 32px;
+  font-size: 3rem;
+  color: #000;
+  z-index: 10;
+  cursor: pointer;
+  user-select: none;
+}
+
+.slide {
+  opacity: 0;
+  transition-duration: 1s ease;
+}
+
+.slide.active {
+  opacity: 1;
+  transition-duration: 4s;
+  transform: scale(1.08);
+}
+
+.perks {
+  font-size: 15px;
+  color: #fff;
+}
