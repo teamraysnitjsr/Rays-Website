@@ -95,3 +95,27 @@ span.sub {
     text-align: center;
     font-family: fantasy;
   }
+  p{
+    font-size: 17px;
+  }
+
+.custom-shape-divider-bottom-1629657631 {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  overflow: hidden;
+  line-height: 0;
+  transform: rotate(180deg);
+}
+
+.custom-shape-divider-bottom-1629657631 svg {
+  position: relative;
+  display: block;
+  width: calc(100% + 1.3px);
+  height: 126px;
+}
+
+.custom-shape-divider-bottom-1629657631 .shape-fill {
+  fill: #3679E3;
+}

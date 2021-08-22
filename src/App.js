@@ -15,7 +15,7 @@ function App() {
 
   return (
     <div className="App">
-      <style>
+      {/* <style>
         {`
       html, body {
         background-color: #1f2833 !important;
@@ -31,7 +31,7 @@ function App() {
       }
     }
     `}
-      </style>
+      </style> */}
       <BrowserRouter>
         {/* {isDesktop ? (
           <div>I show on 1451px or higher</div>
