@@ -46,9 +46,9 @@ const useStyles = makeStyles((theme) => ({
     alignItems: "center",
   },
   avatar: {
-    height: '70px', width: '70px',
+    height: "70px",
+    width: "70px",
     backgroundColor: "#010606",
-    
   },
   form: {
     width: "100%", // Fix IE 11 issue.
@@ -56,7 +56,7 @@ const useStyles = makeStyles((theme) => ({
   },
   submit: {
     margin: theme.spacing(3, 0, 2),
-    backgroundColor: "#21b6ae",
+    backgroundColor: "#01bf71",
   },
 }));
 
