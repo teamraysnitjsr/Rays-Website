@@ -10,59 +10,72 @@ import {
   Segment,
   Label,
 } from "semantic-ui-react";
+import { SiProcesswire } from "react-icons/si";
+import { FcIdea } from "react-icons/fc";
+import { FcAbout } from "react-icons/fc";
+import { FcPieChart } from "react-icons/fc";
 import "./home.syles.css";
 import car1 from "../../assets/images/car1.png";
-import car2 from "../../assets/images/car2.png";
+import car3 from "../../assets/images/car3.jpg";
 import car4 from "../../assets/images/car4.png";
+import news1 from "../../assets/images/news/news1.jpg";
+import news2 from "../../assets/images/news/news2.jpg";
+import news3 from "../../assets/images/news/news3.jpg";
 class Home extends Component {
   render() {
     return (
       <div className="homePage">
-        <Segment
-          inverted
-          vertical
-          textAlign="center"
-          style={{
-            position: "relative",
-          }}
-        >
-          <Container className="content">
-            <Header inverted as="h1">
-              A Step Towards Future
-            </Header>
+        <Segment inverted vertical textAlign="center">
+          <Container
+            className="content"
+            style={{
+              display: "flex",
+              justifyContent: "center",
+            }}
+          >
             <Link to="/about">
-              <Button
-                size="huge"
+              <Header
+                inverted
+                as="h1"
                 style={{
-                  background: "#3679E3",
+                  marginTop: "3%",
                 }}
-                to="/about"
               >
-                Learn more
-              </Button>
+                A Step Towards Future
+              </Header>
+              <FcAbout
+                size="60px"
+                style={{
+                  width: "100%",
+                }}
+              ></FcAbout>
             </Link>
           </Container>
-          <div class="custom-shape-divider-bottom-1629657631">
-            <svg
-              data-name="Layer 1"
-              xmlns="http://www.w3.org/2000/svg"
-              viewBox="0 0 1200 120"
-              preserveAspectRatio="none"
-            >
-              <path
-                d="M321.39,56.44c58-10.79,114.16-30.13,172-41.86,82.39-16.72,168.19-17.73,250.45-.39C823.78,31,906.67,72,985.66,92.83c70.05,18.48,146.53,26.09,214.34,3V0H0V27.35A600.21,600.21,0,0,0,321.39,56.44Z"
-                class="shape-fill"
-              ></path>
-            </svg>
-          </div>
         </Segment>
 
-        <Container
-          style={{
-            
-          }}
-        >
-          <div className="featureHeader">Our Features</div>
+        <div className="spacer layer1"></div>
+
+        <div style={{}}>
+          <div
+            style={{
+              textAlign: "center",
+            }}
+          >
+            <FcPieChart
+              size="60px"
+              style={{
+                marginBottom: "20px",
+              }}
+            ></FcPieChart>
+            <div
+              style={{
+                fontSize: "45px",
+                fontWeight: "800",
+              }}
+            >
+              Our Features
+            </div>
+          </div>
           <Segment vertical>
             <Grid container stackable textAlign="center" columns={3}>
               <Grid.Column style={{}}>
@@ -101,131 +114,207 @@ class Home extends Component {
               </Grid.Column>
             </Grid>
           </Segment>
-          <Segment vertical>
-            <Grid stackable>
+          <div className="spacer2 layer2">
+            <div
+              style={{
+                color: "#fff",
+                textAlign: "center",
+                padding: "5%",
+              }}
+            >
+              <SiProcesswire
+                size="50px"
+                color="#fff"
+                style={{
+                  color: "#fff",
+                  margin: "20px",
+                }}
+              ></SiProcesswire>
+              <div
+                style={{
+                  fontSize: "45px",
+                  fontWeight: "800",
+                }}
+              >
+                Our Process
+              </div>
+            </div>
+            <Grid className="test-div">
+              <Grid.Row textAlign="center">
+                <Grid.Column
+                  mobile={16}
+                  tablet={16}
+                  computer={5}
+                  className="tiles"
+                >
+                  <Label
+                    basic
+                    size="large"
+                    style={{
+                      marginBottom: "25px",
+                    }}
+                  >
+                    MEET
+                  </Label>
+                  <Image centered circular size="large" src={car1} />
+                </Grid.Column>
+                <Grid.Column
+                  mobile={16}
+                  tablet={16}
+                  computer={5}
+                  className="tiles"
+                >
+                  <Label
+                    basic
+                    size="large"
+                    style={{
+                      marginBottom: "25px",
+                    }}
+                  >
+                    PLAN
+                  </Label>
+                  <Image centered circular size="large" src={car3} />
+                </Grid.Column>
+                <Grid.Column
+                  mobile={16}
+                  tablet={16}
+                  computer={5}
+                  className="tiles"
+                >
+                  <Label
+                    basic
+                    size="large"
+                    style={{
+                      marginBottom: "25px",
+                    }}
+                  >
+                    DESIGN
+                  </Label>
+                  <Image centered circular size="large" src={car4} />
+                </Grid.Column>
+              </Grid.Row>
+            </Grid>
+          </div>
+          <div
+            style={{
+              textAlign: "center",
+              justifyContent: "space-between",
+              margin: "3%",
+
+              padding: "4%",
+            }}
+          >
+            <FcIdea size="50px" style={{}}></FcIdea>
+            <div
+              style={{
+                marginTop: "2%",
+                fontSize: "45px",
+                fontWeight: "800",
+              }}
+            >
+              In The News
+            </div>
+          </div>
+          <Segment
+            vertical
+            info
+            style={{
+              padding: "3%",
+            }}
+          >
+            <Grid
+              stackable
+              style={{
+                marginBottom: "5%",
+              }}
+            >
               <Grid.Column width={8}>
                 <Header
                   style={{
                     fontSize: "40px",
                   }}
                 >
-                  First featurette heading.{" "}
+                  Race to IASC pays off for NIT Jamshedpur solar car team
                 </Header>
                 <p>
-                  Many factors go into the construction of a solar car spanning
-                  from the car's structure, how each car component comes
-                  together, the make of its electrical systems and how each
-                  system ties together.
+                  The NIT JAMSHEDPUR Solar Car Team has been fighting to be
+                  recognized as the top solar car team in India, an accolade it
+                  has yet to earn over its 5-year history of racing.While the
+                  team has established a strong lineage of engineers, business
+                  leaders, managers, and creatives over the years, it continues
+                  to go through an ebb and flow of success and failure in its
+                  path to perfection.
                 </p>
               </Grid.Column>
               <Grid.Column width={8}>
-                <Image src={car1} />
+                <Image src={news1} />
               </Grid.Column>
             </Grid>
           </Segment>
-          <Segment vertical>
-            <Grid stackable>
-              <Grid.Column width={8}>
-                <Image src={car2} />
+          <Segment
+            vertical
+            info
+            style={{
+              padding: "3%",
+            }}
+          >
+            <Grid
+              stackable
+              style={{
+                marginBottom: "5%",
+              }}
+            >
+              <Grid.Column width={4}>
+                <Image src={news2} />
               </Grid.Column>
-              <Grid.Column width={8}>
+              <Grid.Column width={12}>
                 <Header
                   style={{
                     fontSize: "40px",
                   }}
                 >
-                  Oh yeah, it's that good.
+                  Taking Off the Pounds to Chase a Sun-Powered Victory
                 </Header>
                 <p>
-                  The business team strives to engage with industries to form
-                  mutually beneficial partnerships, provide our audiences a
-                  platform to follow team's progress on its vehicles and to
-                  deliver team's vision of creating a sustainably aware
-                  community through education.
+                  The failures play just as significant a role in the future
+                  victories of the team as it continues to learn how to be
+                  perfect in order to win the INDO ASIAN Solar Challenge.
                 </p>
               </Grid.Column>
             </Grid>
           </Segment>
-          <Segment vertical>
+          <Segment
+            vertical
+            info
+            style={{
+              padding: "3%",
+            }}
+          >
             <Grid stackable>
-              <Grid.Column width={8}>
+              <Grid.Column width={12}>
                 <Header
                   as="h1"
                   style={{
                     fontSize: "40px",
                   }}
                 >
-                  And lastly, this one.
+                  Meet the College Kids Who Set Out to Build the 'Ultimate
+                  Electric Vehicle'
                 </Header>
                 <p>
-                  The race team looks at every aspect the race, developing the
-                  best strategies for success. From determining the next move
-                  during unforeseen race circumstances to working with our
-                  engineers to develop the most competitive car, they are the
-                  minds that ensure we are in the most optimal position we can
-                  be to win.
+                  This constant change in the tide in the past has elevated the
+                  legacies of the team's successful racers to those of giants
+                  whose stories help inspire the current team members to push
+                  the bounds of what seems possible in shaping their car and
+                  their team.
                 </p>
               </Grid.Column>
-              <Grid.Column width={8}>
-                <Image src={car4} />
+              <Grid.Column width={4}>
+                <Image src={news3} />
               </Grid.Column>
             </Grid>
           </Segment>
-          <Grid.Column
-            mobile={16}
-            tablet={13}
-            computer={13}
-            floated="right"
-            id="content"
-          >
-            <Grid padded>
-              <Grid.Row textAlign="center">
-                <Grid.Column mobile={12} tablet={6} computer={5}>
-                  <Image centered circular size="small" src={car1} />
-                  <Label basic size="large">
-                    MEET
-                  </Label>
-                  <p>Something else</p>
-                </Grid.Column>
-                <Grid.Column mobile={12} tablet={6} computer={5}>
-                  <Image centered circular size="small" src={car1} />
-                  <Label basic size="large">
-                    PLAN
-                  </Label>
-                  <p>Something else</p>
-                </Grid.Column>
-                <Grid.Column mobile={12} tablet={6} computer={5}>
-                  <Image centered circular size="small" src={car1} />
-                  <Label basic size="large">
-                    DESIGN
-                  </Label>
-                  <p>Something else</p>
-                </Grid.Column>
-                <Grid.Column mobile={12} tablet={6} computer={5}>
-                  <Image centered circular size="small" src={car1} />
-                  <Label basic size="large">
-                    DEVELOP
-                  </Label>
-                  <p>Something else</p>
-                </Grid.Column>
-                <Grid.Column mobile={12} tablet={6} computer={5}>
-                  <Image centered circular size="small" src={car1} />
-                  <Label basic size="large">
-                    DEVELOP
-                  </Label>
-                  <p>Something else</p>
-                </Grid.Column>
-                <Grid.Column mobile={12} tablet={6} computer={5}>
-                  <Image centered circular size="small" src={car1} />
-                  <Label basic size="large">
-                    DEVELOP
-                  </Label>
-                  <p>Something else</p>
-                </Grid.Column>
-              </Grid.Row>
-            </Grid>
-          </Grid.Column>
-        </Container>
+        </div>
       </div>
     );
   }
