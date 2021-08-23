@@ -1,29 +1,21 @@
-
 @media only screen and (min-width: 768px) {
   .ui.container {
-    width: 700px;
-    max-width: 700px;
+    width: 100%;
+
   }
 
-   .featureHeader{
+  .featureHeader {
     font-size: 45px;
-    margin-top: 8%;
+    margin-bottom: 3%;
     text-align: center;
     font-family: fantasy;
   }
- 
+
 }
 
-.ui.inverted.vertical.center.aligned.segment {
-  padding-top: 36px;
-}
+.ui.inverted.vertical.center.aligned.segment {}
 
-nav.ui.container .ui.inverted.compact.menu .active.item {
-  background-color: inherit;
-  border-bottom-color: white;
-  border-bottom-style: solid;
-  border-bottom-width: 2px;
-}
+
 
 .ui.inverted.vertical.segment {
   height: 90vh;
@@ -38,10 +30,10 @@ nav.ui.container .ui.inverted.compact.menu .active.item {
 }
 
 .ui.content.container {
-  height: 300px;
+
   position: absolute;
   top: 0;
-  bottom: 45%;
+
   left: 0;
   right: 0;
   margin: auto;
@@ -82,40 +74,63 @@ span.sub {
   width: 100%;
   top: 1rem;
 }
+
 .ui.centered.small.circular.image {
   margin-top: 14px;
   margin-bottom: 14px;
 }
+
 #content {
   padding: 5%;
 }
-.featureHeader{
-    font-size: 45px;
-     margin-top: 8%;
-    text-align: center;
-    font-family: fantasy;
-  }
-  p{
-    font-size: 17px;
-  }
 
-.custom-shape-divider-bottom-1629657631 {
-  position: absolute;
-  bottom: 0;
-  left: 0;
+.featureHeader {
+  font-size: 45px;
+
+  text-align: center;
+  font-family: fantasy;
+}
+
+p {
+  font-size: 17px;
+}
+
+
+
+.spacer {
+  aspect-ratio: 960/300;
   width: 100%;
-  overflow: hidden;
-  line-height: 0;
-  transform: rotate(180deg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
 }
 
-.custom-shape-divider-bottom-1629657631 svg {
-  position: relative;
-  display: block;
-  width: calc(100% + 1.3px);
-  height: 126px;
+.spacer2 {
+
+  width: 100%;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
 }
 
-.custom-shape-divider-bottom-1629657631 .shape-fill {
-  fill: #3679E3;
+.layer1 {
+  background-image: url('../../assets/svg/layered-waves-haikei\ \(3\).svg');
+}
+
+.layer2 {
+  background-image: url('../../assets/svg/lkg1.svg');
+}
+
+.info {}
+
+.test-div {
+
+  display: flex;
+  justify-content: center;
+ padding: 4%;
+
+}
+
+.test-div .tiles {
+  padding: 2%;
 }
