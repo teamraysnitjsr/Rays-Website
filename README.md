@@ -1,70 +1,52 @@
-# Getting Started with Create React App
+---
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+![GitHub custom open for Contribution](https://img.shields.io/static/v1?label=Open%20For&message=Contribution&color=%3CCOLOR%3E)
 
-## Available Scripts
+# Team-Rays
 
-In the project directory, you can run:
+The aim of this project is to develop an online website for our team.
 
-### `yarn start`
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+## Guidelines
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+Please try to follow these guidelines:
 
-### `yarn test`
+- [ ] Try to make the UI as elegant as possible, use Cards, box-shadows etc. Choose a subtle color-theme.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+- [ ] Prefer functional components over class components, use react hooks.
 
-### `yarn build`
+- [ ] Only use images/content that are available for free and don't need any special license.
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+- [ ] Last but not the least, use your imagination to build the coolest app you can think of ! :heart_eyes_cat: :fire: :fire:
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+## Setting up the project
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+1. Clone the repository on your local machine (cloning might take some time).
+2. Run npm install.
 
-### `yarn eject`
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+## How to Contribute
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+> **Note 1:** If you've never made a pull request before, or participated in an open-source project, we recommend taking a look at this [wonderful video tutorial](https://youtu.be/ZI2D0CI4TXs). And if you want a more complete tutorial on using github, creating branches etc. , [here's a detailed video series](https://www.youtube.com/watch?v=3RjQznt-8kE&list=PL4cUxeGkcC9goXbgTDQ0n_4TBzOO0ocPR).Once you've got your feet wet, you're ready to come back and dive into Hacktoberfest fun!
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+1. Star this repository.
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+2. And then you have to fork (make a copy) of this repo to your Github account.
 
-## Learn More
+3. Clone (download) your fork to your computer.
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+4. Set your streams so you can sync your clone with the original repo (get the latest updates)
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+   - [ ] <code>git remote add upstream https://github.com/teamraysnitjsr/Rays-Website.git</code>
 
-### Code Splitting
+   - [ ] <code>git pull upstream master</code>
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+   - [ ] The above 2 commands will synchronize your forked version of the project with the actual repository.
 
-### Analyzing the Bundle Size
+5. Create a branch with your username.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+6. Make the changes in your branch. 
 
-### Making a Progressive Web App
+7. Commit and push the code to YOUR fork.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `yarn build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+8. Create a pull request to have the changes merged into the origin.
