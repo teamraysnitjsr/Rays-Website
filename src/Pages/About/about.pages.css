@@ -21,18 +21,15 @@ h1 {
 
 .works > p {
   padding: 20px;
-  color: white;
   font-size: 20px;
 }
 .process > p {
   padding: 20px;
-  color: white;
   font-size: 20px;
 }
 .icons {
   margin-top: 4rem;
   font-size: 60px;
-  color: rgb(252, 244, 244);
   display: flex;
   justify-content: space-evenly;
 }
