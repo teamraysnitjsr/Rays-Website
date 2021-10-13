@@ -29,8 +29,6 @@ Please try to follow these guidelines:
 
 > **Note 1:** If you've never made a pull request before, or participated in an open-source project, we recommend taking a look at this [wonderful video tutorial](https://youtu.be/ZI2D0CI4TXs). And if you want a more complete tutorial on using github, creating branches etc. , [here's a detailed video series](https://www.youtube.com/watch?v=3RjQznt-8kE&list=PL4cUxeGkcC9goXbgTDQ0n_4TBzOO0ocPR).Once you've got your feet wet, you're ready to come back and dive into Hacktoberfest fun!
 
-> **Note 2:** **Super Important** Only the pull requests created between October 1st, 2021 and October 31st, 2021 will be counted!
-
 1. Star this repository.
 
 2. And then you have to fork (make a copy) of this repo to your Github account.
