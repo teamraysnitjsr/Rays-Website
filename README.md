@@ -17,12 +17,13 @@ Please try to follow these guidelines:
 
 - [ ] Only use images/content that are available for free and don't need any special license.
 
-- [ ] Last but not the least, use your imagination to build the coolest app you can think of ! :heart_eyes_cat: :fire: :fire:
+- [ ] Last but not the least, use your imagination to build the coolest app you can think of ! 
 
 ## Setting up the project
 
 1. Clone the repository on your local machine (cloning might take some time).
 2. Run npm install.
+3. Once installation is complete run npm start.
 
 
 ## How to Contribute
