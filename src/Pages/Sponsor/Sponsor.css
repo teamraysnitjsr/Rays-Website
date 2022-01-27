@@ -10,7 +10,9 @@ html {
 *:after {
   box-sizing: inherit;
 }
-
+ul {
+    list-style-type: none;
+}
 .sponsor-body {
   *zoom: 1;
   font-family: "Lato", sans-serif;
@@ -48,7 +50,7 @@ html {
 
  .perks{
   list-style-position: outside;
-  list-style-type: circle;
+  list-style-type: none;
   margin: 0;
   padding: 0;
 }
@@ -178,7 +180,9 @@ html {
 }
 
 .sponsor-p {
-  font-size: 0.875em;
+  font-size: 0.875em; 
+ padding-left: 1vh;
+ padding-right: 1vh;
 }
 
 .sponsor-p,
@@ -198,9 +202,9 @@ html {
 }
 
 .sponsor-button {
-  background-color: #9c83aa;
+  background-color: #fff;
   border-radius: 20px;
-  color: #fff;
+   color: rgba(0, 0, 0, 1);
   font-size: 1em;
   font-weight: 700;
   padding: 0.75em 1.5em;

@@ -1,41 +1,96 @@
-import React, { useState } from 'react';
-import { SliderData } from './SliderData';
-import { FaArrowAltCircleRight, FaArrowAltCircleLeft } from 'react-icons/fa';
+import React from "react";
+import { useTheme } from "@mui/material/styles";
+import Box from "@mui/material/Box";
+import MobileStepper from "@mui/material/MobileStepper";
+import Button from "@mui/material/Button";
+import KeyboardArrowLeft from "@mui/icons-material/KeyboardArrowLeft";
+import KeyboardArrowRight from "@mui/icons-material/KeyboardArrowRight";
+import SwipeableViews from "react-swipeable-views";
+import { autoPlay } from "react-swipeable-views-utils";
+import { SliderData } from "./SliderData";
 
-const ImageSlider = ({ slides }) => {
-  const [current, setCurrent] = useState(0);
-  const length = slides.length;
+const AutoPlaySwipeableViews = autoPlay(SwipeableViews);
 
-  const nextSlide = () => {
-    setCurrent(current === length - 1 ? 0 : current + 1);
+function ImageSlider() {
+  const theme = useTheme();
+  const [activeStep, setActiveStep] = React.useState(0);
+  const maxSteps = SliderData.length;
+
+  const handleNext = () => {
+    setActiveStep((prevActiveStep) => prevActiveStep + 1);
   };
 
-  const prevSlide = () => {
-    setCurrent(current === 0 ? length - 1 : current - 1);
+  const handleBack = () => {
+    setActiveStep((prevActiveStep) => prevActiveStep - 1);
   };
 
-  if (!Array.isArray(slides) || slides.length <= 0) {
-    return null;
-  }
+  const handleStepChange = (step) => {
+    setActiveStep(step);
+  };
 
   return (
-    <section className='slider'>
-      <FaArrowAltCircleLeft className='left-arrow' onClick={prevSlide} />
-      <FaArrowAltCircleRight className='right-arrow' onClick={nextSlide} />
-      {SliderData.map((slide, index) => {
-        return (
-          <div
-            className={index === current ? 'slide active' : 'slide'}
-            key={index}
-          >
-            {index === current && (
-              <img src={slide.image} alt='travel' className='slider-image' />
-            )}
-          </div>
-        );
-      })}
-    </section>
+    <div style={{ marginTop: "20vh" }}>
+      <Box sx={{ width: "auto", flexGrow: 1 }}>
+        <AutoPlaySwipeableViews
+          axis={theme.direction === "rtl" ? "x-reverse" : "x"}
+          index={activeStep}
+          onChangeIndex={handleStepChange}
+          enableMouseEvents
+        >
+          {SliderData.map((step, index) => (
+            <div key={step.label}>
+              {Math.abs(activeStep - index) <= 2 ? (
+                <Box
+                  component="img"
+                  sx={{
+                    height: "50vh",
+                    display: "block",
+
+                    overflow: "hidden",
+                    width: "100%",
+                  }}
+                  src={step.image}
+                />
+              ) : null}
+            </div>
+          ))}
+        </AutoPlaySwipeableViews>
+        <MobileStepper
+          steps={maxSteps}
+          position="static"
+          activeStep={activeStep}
+          nextButton={
+            <Button
+              size="small"
+              onClick={handleNext}
+              disabled={activeStep === maxSteps - 1}
+            >
+              Next
+              {theme.direction === "rtl" ? (
+                <KeyboardArrowLeft />
+              ) : (
+                <KeyboardArrowRight />
+              )}
+            </Button>
+          }
+          backButton={
+            <Button
+              size="small"
+              onClick={handleBack}
+              disabled={activeStep === 0}
+            >
+              {theme.direction === "rtl" ? (
+                <KeyboardArrowRight />
+              ) : (
+                <KeyboardArrowLeft />
+              )}
+              Back
+            </Button>
+          }
+        />
+      </Box>
+    </div>
   );
-};
+}
 
 export default ImageSlider;
