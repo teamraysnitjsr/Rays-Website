@@ -14,7 +14,8 @@ import {
 import logo from "../../assets/images/rays-logo.png";
 const Navbar = ({toggle}) => {
   return (
-    <Nav>
+    <Nav style={{backgroundColor: "rgb(255,255,255)",
+background: 'linear-gradient(45deg, rgba(255,255,255,1) 25%, rgba(2,0,36,1) 48%)'}}>
       <NavbarContainer>
         <NavLogo to="/">
           {" "}
